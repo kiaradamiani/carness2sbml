@@ -69,8 +69,10 @@ def importChemistry(lastGen,filesPath=""):
 
         print comment
 
-        #costruisco dizionario con id specie e nome specie e scrivo elenco specie con concentrazioni su file
+        #costruisco dizionario con id specie e nome specie (e dizionario con nome specie e indicazione se bufferizzata) e scrivo elenco specie con concentrazioni su file
         speciesIDs={}
+        speciesNames={}
+
         for line in open(file_species,'r').readlines():
             thisline = line.split("\t");
 
@@ -80,11 +82,15 @@ def importChemistry(lastGen,filesPath=""):
             Kdecomp=thisline[5]
 
 
-            #se la concentrazione è bloccata la specie deve comparire nelle reazioni con il dollaro davanti
-            if (int(lockedConcentration) == 1):
-                speciesIDs[speciesID]='$'+speciesName
-            else:
-                speciesIDs[speciesID]=speciesName
+#            #se la concentrazione è bloccata la specie deve comparire nelle reazioni con il dollaro davanti
+#            if (int(lockedConcentration) == 1):
+#                speciesIDs[speciesID]='$'+speciesName
+#            else:
+#                speciesIDs[speciesID]=speciesName
+
+            speciesIDs[speciesID]=speciesName
+            speciesNames[speciesName]=lockedConcentration.strip()
+
 
             #se specie non era presente all'inzio metto concetrazione a 0
             if int(speciesID)<int(InitialNumberOfSpecies):
@@ -97,7 +103,7 @@ def importChemistry(lastGen,filesPath=""):
             file2write.write('\n')
 
 
-    #costruisco dizionario con id reaction e specie catalyst(già tradotta dall'id) e rate
+        #costruisco dizionario con id reaction e specie catalyst(già tradotta dall'id) e rate
         catalysisIDs={}
         for line in open(file_catalysis,'r').readlines():
             thisline = line.split("\t");
@@ -120,30 +126,105 @@ def importChemistry(lastGen,filesPath=""):
 
             #se è un cleavage
             if reactionType=='1':
+                products="" #inizializzo prodotti
+
                 reactionID=thisline[0]
                 substrate=speciesIDs[thisline[2]]
-                product1=speciesIDs[thisline[3]]
-                product2=speciesIDs[thisline[4]]
-                catalyst=catalysisIDs[reactionID]
+                #se concentrazione è bloccata aggiungo dollaro
+                if speciesNames[substrate]=='1':
+                    substate='$'+substrate
 
-                cleavage='cleavage'+reactionID+','+substrate+'+'+catalyst+' -> '+product1+'+'+product2+'+'+catalyst+', '+Kcleav+';'
+                product1=speciesIDs[thisline[3]]
+                print "//Cleavage product 1 ",product1
+                if (speciesNames[product1]=='1'):
+                    product1='$'+product1
+                else:
+                    products=product1
+
+                product2=speciesIDs[thisline[4]]
+                print "//Cleavage product 2 ",product2
+
+                if speciesNames[product2]=='1':
+                    product2='$'+product2
+                else:
+                    if len(products)>0:
+                        products=products+"+"+product2
+                    else:
+                        products=product2
+
+                catalyst=catalysisIDs[reactionID]
+                if (speciesNames[catalyst]=='1'):
+                    catalyst='$'+catalyst
+                else:
+                    if len(products)>0:
+                        products=products+"+"+catalyst
+                    else:
+                        products=catalyst
+
+                cleavage='cleavage'+reactionID+','+substrate+'+'+catalyst+' -> '+products+', '+Kcleav+';'
 
                 file2write.write(cleavage)
                 file2write.write('\n')
 
                 print cleavage
 
-                #se è un cleavage
+            #se è una condensation
+            products=""
+            decomplex=""
             if reactionType=='0':
                 reactionID=thisline[0]
-                substrate1=speciesIDs[thisline[2]]
-                substrate2=speciesIDs[thisline[3]]
-                product=speciesIDs[thisline[4]]
-                catalyst=catalysisIDs[reactionID]
+                substrate1=speciesIDs[thisline[3]]
+                if speciesNames[substrate1]=='1':
+                    substrate1='$'+substrate1
+                else:
+                    decomplex=substrate1
 
-                complexation= 'complexation'+reactionID+','+substrate1+'+'+catalyst+' ->'+catalyst+substrate1+','+Kcomp+';'
-                decomplexation='decomplexation'+reactionID+','+catalyst+substrate1+' ->'+substrate1+'+'+catalyst+','+Kdecomp+';'
-                condensation='condensation'+reactionID+','+catalyst+substrate1+'+'+substrate2+  ' ->' +substrate1+substrate2+'+'+catalyst+','+Kcond+';'
+                substrate2=speciesIDs[thisline[4]]
+                if speciesNames[substrate2]=='1':
+                    substrate2='$'+substrate2
+
+                product=speciesIDs[thisline[2]]
+
+                print '//product condendation',product
+
+                if product not in speciesNames.keys():
+                    speciesNames[product]='0'
+                    productConc=product+"="+0+";"
+                    print productConc
+                    file2write.write(productConc)
+                    products=product
+                else:
+                    if speciesNames[product]=='1':
+                        print 'speciesNames[product]==1:'
+                        product='$'+product
+                    else:
+                        products=product
+
+                catalyst=catalysisIDs[reactionID]
+                if speciesNames[catalyst]=='1':
+                    catalyst='$'+catalyst
+                else:
+                    if len(products)>0:
+                        products=product+"+"+catalyst
+                    else:
+                        products=catalyst
+                    if len(decomplex)>0:
+                        decomplex=decomplex+"+"+catalyst
+                    else:
+                        decomplex=catalyst
+
+
+                complex=catalyst+substrate1.strip('$')
+                #se complesso non è già nel file species devo settare concentrazione iniziale
+                if complex not in speciesNames.keys():
+                    speciesNames[complex]='0'
+                    complexConc=complex+"="+'0'+";"+"\n"
+                    print complexConc
+                    file2write.write(complexConc)
+
+                complexation= 'complexation'+reactionID+','+substrate1+'+'+catalyst+' ->'+complex+','+Kcomp+';'
+                decomplexation='decomplexation'+reactionID+','+complex+' ->'+decomplex+','+Kdecomp+';'
+                condensation='condensation'+reactionID+','+complex+'+'+substrate2+  ' ->' +products+','+Kcond+';'
 
                 print complexation
                 file2write.write(complexation)
