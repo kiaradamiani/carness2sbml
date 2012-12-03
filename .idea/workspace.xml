@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5a1c2c0-140a-45f6-823a-c9094c908913" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/importChemistryParameters.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/catalysis_100_1_000013510.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/catalysis_100_1_000026670.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/catalysis_100_1_000026671.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reactions_100_1_000026670.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reactions_100_1_000026671.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/species_100_1_000026671.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/times_098_1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/times_099_1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/times_100_1.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExportFile.dizzy" afterPath="$PROJECT_DIR$/ExportFile.dizzy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/importChemistry.py" afterPath="$PROJECT_DIR$/importChemistry.py" />
     </list>
     <ignored path="carness2sbml.iws" />
@@ -33,10 +24,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="importChemistry.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="importChemistry.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/importChemistry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="30" selection-start="2108" selection-end="2108" vertical-scroll-proportion="-16.923077">
+            <state line="138" column="22" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.31496063">
               <folding>
                 <element signature="e#47#56#0" expanded="true" />
               </folding>
@@ -44,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="importChemistryParameters.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="importChemistryParameters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/importChemistryParameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="16" selection-start="64" selection-end="64" vertical-scroll-proportion="0.06676558">
+            <state line="0" column="0" selection-start="0" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,8 +57,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/importChemistry.py" />
         <option value="$PROJECT_DIR$/importChemistryParameters.py" />
+        <option value="$PROJECT_DIR$/importChemistry.py" />
       </list>
     </option>
   </component>
@@ -277,19 +268,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/importChemistry.py">
+    <entry file="file://$PROJECT_DIR$/importChemistryParameters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="30" selection-start="2108" selection-end="2108" vertical-scroll-proportion="-16.923077">
-          <folding>
-            <element signature="e#47#56#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/importChemistryParameters.py">
+    <entry file="file://$PROJECT_DIR$/importChemistry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="64" selection-end="64" vertical-scroll-proportion="0.06676558">
-          <folding />
+        <state line="138" column="22" selection-start="4687" selection-end="4687" vertical-scroll-proportion="0.31496063">
+          <folding>
+            <element signature="e#47#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

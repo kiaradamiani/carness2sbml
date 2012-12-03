@@ -55,7 +55,7 @@ condensation0,AAAAB+$BB ->BBB+AAAA,50;
 cleavage1,BAA+AAB -> AAB, 25;
 cleavage2,AAB+BBBA -> BBBA, 25;
 cleavage3,BABA+BAA -> BAB+BAA, 25;
-cleavage4,AB+BAAA -> BAAA, 25;
+cleavage4,$AB+BAAA -> BAAA, 25;
 cleavage5,BAB+AABB -> AABB, 25;
 cleavage6,BABB+BBAA -> ABB+BBAA, 25;
 complexation7,ABB+AABA ->AABAABB,50;

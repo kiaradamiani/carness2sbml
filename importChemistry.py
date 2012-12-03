@@ -132,9 +132,12 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
 
                 reactionID=thisline[0]
                 substrate=speciesIDs[thisline[2]]
+                ##print 'substrate',substrate
                 #se concentrazione è bloccata aggiungo dollaro
+                ##print 'speciesNames[substrate]',speciesNames[substrate]
                 if speciesNames[substrate]=='1':
-                    substate='$'+substrate
+                    ##print "==1"
+                    substrate='$'+substrate
 
                 product1=speciesIDs[thisline[3]]
                 print "//Cleavage product 1 ",product1
@@ -155,8 +158,11 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
                         products=product2
 
                 catalyst=catalysisIDs[reactionID]
+                #print 'catalyst',catalyst
+                #print 'speciesNames[catalyst]',speciesNames[catalyst]
                 if (speciesNames[catalyst]=='1'):
-                    catalyst='$'+catalyst
+                    print "==1"
+                    #catalyst='$'+catalyst
                 else:
                     if len(products)>0:
                         products=products+"+"+catalyst
