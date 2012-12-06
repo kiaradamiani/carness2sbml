@@ -14,56 +14,49 @@
 </unitDefinition>
 </listOfUnitDefinitions>
 <listOfCompartments>
-<compartment name="univ" volume="1.0"/>
+<compartment name="V1" volume="1.0000000000000001E-21"/>
 </listOfCompartments>
 <listOfSpecies>
-<species boundaryCondition="true" compartment="univ" initialAmount="0.0333333333333" name="A"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="AAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="AAAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="AAAAABB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="AAAAB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="AAAB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="AAB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="AABA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="AABAABB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="AABABABB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="AABB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="AB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="ABA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="ABAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="ABAAAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="ABAABAAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="ABB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="ABBAB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="ABBB"/>
-<species boundaryCondition="true" compartment="univ" initialAmount="0.0333333333333" name="B"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BAAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BAB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BABA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="BABAAAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="BABAAABB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BABB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="BABBAABA"/>
-<species boundaryCondition="true" compartment="univ" initialAmount="0.0333333333333" name="BB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BBA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BBAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="BBAAABAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="BBAABAA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="BBAABAB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BBAB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BBB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BBBA"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0333333333333" name="BBBB"/>
-<species boundaryCondition="false" compartment="univ" initialAmount="0.0" name="BBBBABA"/>
+<species boundaryCondition="true" compartment="V1" initialAmount="3.33333333333E-23" name="A"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="AAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="AAAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="AAAAABB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="AAAAB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="AAAB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="AAB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="AABA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="AABAABB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="AABABABB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="AABB"/>
+<species boundaryCondition="true" compartment="V1" initialAmount="3.33333333333E-23" name="AB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="ABA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="ABAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="ABAAAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="ABAABAAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="ABB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="ABBAB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="ABBB"/>
+<species boundaryCondition="true" compartment="V1" initialAmount="3.33333333333E-23" name="B"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BAAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BAB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BABA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="BABAAAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="BABAAABB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BABB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="BABBAABA"/>
+<species boundaryCondition="true" compartment="V1" initialAmount="3.33333333333E-23" name="BB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BBA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BBAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="BBAAABAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="BBAABAA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="BBAABAB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BBAB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BBB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BBBA"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="3.33333333333E-23" name="BBBB"/>
+<species boundaryCondition="false" compartment="V1" initialAmount="0.0" name="BBBBABA"/>
 </listOfSpecies>
-<listOfParameters>
-<parameter name="AA" value="0.0333333333333"/>
-<parameter name="ABAB" value="0.0333333333333"/>
-<parameter name="ABBA" value="0.0333333333333"/>
-<parameter name="BA" value="0.0333333333333"/>
-<parameter name="BAAB" value="0.0333333333333"/>
-</listOfParameters>
 <listOfRules/>
 <listOfReactions>
 <reaction name="cleavage1" reversible="false">
@@ -74,9 +67,9 @@
 <listOfProducts>
 <speciesReference species="AAB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AAB*BAA">
+<kineticLaw formula="__RATE__*(AAB * V1)*(BAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -88,9 +81,9 @@
 <listOfProducts>
 <speciesReference species="ABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*ABA*AAA">
+<kineticLaw formula="__RATE__*(ABA * V1)*(AAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -103,9 +96,9 @@
 <speciesReference species="ABA" stoichiometry="1"/>
 <speciesReference species="ABBAB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*ABBAB*ABAA">
+<kineticLaw formula="__RATE__*(ABBAB * V1)*(ABAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -117,9 +110,9 @@
 <listOfProducts>
 <speciesReference species="ABBB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBA*ABBB">
+<kineticLaw formula="__RATE__*(BBA * V1)*(ABBB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -132,9 +125,9 @@
 <speciesReference species="BAA" stoichiometry="1"/>
 <speciesReference species="BABB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAA*BABB">
+<kineticLaw formula="__RATE__*(BBAA * V1)*(BABB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -147,9 +140,9 @@
 <speciesReference species="AAAB" stoichiometry="1"/>
 <speciesReference species="BBB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AAAB*ABBB">
+<kineticLaw formula="__RATE__*(AAAB * V1)*(ABBB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -161,9 +154,9 @@
 <listOfProducts>
 <speciesReference species="BBAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*ABB*BBAA">
+<kineticLaw formula="__RATE__*(ABB * V1)*(BBAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -176,9 +169,9 @@
 <speciesReference species="ABB" stoichiometry="1"/>
 <speciesReference species="BAAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AABB*BAAA">
+<kineticLaw formula="__RATE__*(AABB * V1)*(BAAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -190,9 +183,9 @@
 <listOfProducts>
 <speciesReference species="BBBA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBBA*AAB">
+<kineticLaw formula="__RATE__*(BBBA * V1)*(AAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -204,9 +197,9 @@
 <speciesReference species="BBB" stoichiometry="1"/>
 <speciesReference species="BBBB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBBB^2">
+<kineticLaw formula="__RATE__*(BBBB * V1)^2">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -219,9 +212,9 @@
 <speciesReference species="BBBB" stoichiometry="1"/>
 <speciesReference species="BAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBBB*ABAA">
+<kineticLaw formula="__RATE__*(BBBB * V1)*(ABAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -233,9 +226,9 @@
 <listOfProducts>
 <speciesReference species="ABBB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BABB*ABBB">
+<kineticLaw formula="__RATE__*(BABB * V1)*(ABBB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -248,9 +241,9 @@
 <speciesReference species="BBA" stoichiometry="1"/>
 <speciesReference species="BABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBBA*BABA">
+<kineticLaw formula="__RATE__*(BBBA * V1)*(BABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -263,9 +256,9 @@
 <speciesReference species="BBA" stoichiometry="1"/>
 <speciesReference species="AAAAABB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAB*AAAAABB">
+<kineticLaw formula="__RATE__*(BBAB * V1)*(AAAAABB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -278,9 +271,9 @@
 <speciesReference species="ABA" stoichiometry="1"/>
 <speciesReference species="AAAAABB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AAAAABB*AABA">
+<kineticLaw formula="__RATE__*(AAAAABB * V1)*(AABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -293,9 +286,9 @@
 <speciesReference species="BAA" stoichiometry="1"/>
 <speciesReference species="BAB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BAA*BABA">
+<kineticLaw formula="__RATE__*(BAA * V1)*(BABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -307,9 +300,9 @@
 <listOfProducts>
 <speciesReference species="BAAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AB*BAAA">
+<kineticLaw formula="__RATE__*(AB * V1)*(BAAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -321,9 +314,9 @@
 <listOfProducts>
 <speciesReference species="AABB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AABB*BAB">
+<kineticLaw formula="__RATE__*(AABB * V1)*(BAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -336,9 +329,9 @@
 <speciesReference species="ABB" stoichiometry="1"/>
 <speciesReference species="BBAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAA*BABB">
+<kineticLaw formula="__RATE__*(BBAA * V1)*(BABB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -350,9 +343,9 @@
 <listOfProducts>
 <speciesReference species="BBA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBA*BBAB">
+<kineticLaw formula="__RATE__*(BBA * V1)*(BBAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="25.0"/>
+<parameter name="__RATE__" value="2.4999999999999998E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -364,9 +357,9 @@
 <listOfProducts>
 <speciesReference species="AAAAB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AAAA*B">
+<kineticLaw formula="__RATE__*(AAAA * V1)*(B * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -378,9 +371,9 @@
 <listOfProducts>
 <speciesReference species="BBBBABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBB*BABA">
+<kineticLaw formula="__RATE__*(BBB * V1)*(BABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -392,9 +385,9 @@
 <listOfProducts>
 <speciesReference species="BBAABAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAA*BAA">
+<kineticLaw formula="__RATE__*(BBAA * V1)*(BAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -406,9 +399,9 @@
 <listOfProducts>
 <speciesReference species="ABAAAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*ABA*AAA">
+<kineticLaw formula="__RATE__*(ABA * V1)*(AAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -420,9 +413,9 @@
 <listOfProducts>
 <speciesReference species="BBAAABAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAA*ABAA">
+<kineticLaw formula="__RATE__*(BBAA * V1)*(ABAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -434,9 +427,9 @@
 <listOfProducts>
 <speciesReference species="AABABABB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BABB*AABA">
+<kineticLaw formula="__RATE__*(BABB * V1)*(AABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -448,9 +441,9 @@
 <listOfProducts>
 <speciesReference species="AABAABB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*ABB*AABA">
+<kineticLaw formula="__RATE__*(ABB * V1)*(AABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -462,9 +455,9 @@
 <listOfProducts>
 <speciesReference species="BBAABAB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAA*BAB">
+<kineticLaw formula="__RATE__*(BBAA * V1)*(BAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -477,9 +470,9 @@
 <speciesReference species="AAAA" stoichiometry="1"/>
 <speciesReference species="BBB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BB*AAAAB">
+<kineticLaw formula="__RATE__*(BB * V1)*(AAAAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -492,9 +485,9 @@
 <speciesReference species="BABAAABB" stoichiometry="1"/>
 <speciesReference species="BBB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AABB*BBBBABA">
+<kineticLaw formula="__RATE__*(AABB * V1)*(BBBBABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -507,9 +500,9 @@
 <speciesReference species="BBAA" stoichiometry="1"/>
 <speciesReference species="BAAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAABAA*A">
+<kineticLaw formula="__RATE__*(BBAABAA * V1)*(A * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -522,9 +515,9 @@
 <speciesReference species="ABA" stoichiometry="1"/>
 <speciesReference species="AAAAABB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*ABAAAA*AABB">
+<kineticLaw formula="__RATE__*(ABAAAA * V1)*(AABB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -537,9 +530,9 @@
 <speciesReference species="ABAABAAA" stoichiometry="1"/>
 <speciesReference species="BBAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAAABAA*BAAA">
+<kineticLaw formula="__RATE__*(BBAAABAA * V1)*(BAAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -552,9 +545,9 @@
 <speciesReference species="BABBAABA" stoichiometry="1"/>
 <speciesReference species="AABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AABABABB*AABA">
+<kineticLaw formula="__RATE__*(AABABABB * V1)*(AABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -567,9 +560,9 @@
 <speciesReference species="ABBAB" stoichiometry="1"/>
 <speciesReference species="AABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AB*AABAABB">
+<kineticLaw formula="__RATE__*(AB * V1)*(AABAABB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -582,9 +575,9 @@
 <speciesReference species="BABAAAA" stoichiometry="1"/>
 <speciesReference species="BBAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AAAA*BBAABAB">
+<kineticLaw formula="__RATE__*(AAAA * V1)*(BBAABAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="50.0"/>
+<parameter name="__RATE__" value="4.9999999999999996E22"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -595,9 +588,9 @@
 <listOfProducts>
 <speciesReference species="AAAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AAAAB">
+<kineticLaw formula="__RATE__*(AAAAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -609,9 +602,9 @@
 <speciesReference species="BBB" stoichiometry="1"/>
 <speciesReference species="BABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBBBABA">
+<kineticLaw formula="__RATE__*(BBBBABA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -623,9 +616,9 @@
 <speciesReference species="BBAA" stoichiometry="1"/>
 <speciesReference species="BAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAABAA">
+<kineticLaw formula="__RATE__*(BBAABAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -637,9 +630,9 @@
 <speciesReference species="ABA" stoichiometry="1"/>
 <speciesReference species="AAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*ABAAAA">
+<kineticLaw formula="__RATE__*(ABAAAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -651,9 +644,9 @@
 <speciesReference species="BBAA" stoichiometry="1"/>
 <speciesReference species="ABAA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAAABAA">
+<kineticLaw formula="__RATE__*(BBAAABAA * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -665,9 +658,9 @@
 <speciesReference species="BABB" stoichiometry="1"/>
 <speciesReference species="AABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AABABABB">
+<kineticLaw formula="__RATE__*(AABABABB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -679,9 +672,9 @@
 <speciesReference species="ABB" stoichiometry="1"/>
 <speciesReference species="AABA" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*AABAABB">
+<kineticLaw formula="__RATE__*(AABAABB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>
@@ -693,9 +686,9 @@
 <speciesReference species="BBAA" stoichiometry="1"/>
 <speciesReference species="BAB" stoichiometry="1"/>
 </listOfProducts>
-<kineticLaw formula="__RATE__*BBAABAB">
+<kineticLaw formula="__RATE__*(BBAABAB * V1)">
 <listOfParameters>
-<parameter name="__RATE__" value="1.0E-6"/>
+<parameter name="__RATE__" value="1.0E15"/>
 </listOfParameters>
 </kineticLaw>
 </reaction>

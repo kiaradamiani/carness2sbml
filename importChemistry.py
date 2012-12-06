@@ -50,10 +50,11 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
 
     file_conf=ConfFilePath+'acsm2s.conf'
     lunghezza_max_fd=getParam('lunghezza_max_fd',file_conf)
+    V1=float(getParam('volume',file_conf))
     InitialNumberOfSpecies=pow(2,int(lunghezza_max_fd)+1)-2
 
     overallConcentration=getParam('overallConcentration',file_conf)
-    initialConc=float(overallConcentration)/float(InitialNumberOfSpecies)
+    initialConc=(float(overallConcentration)/float(InitialNumberOfSpecies))*float(V1)
 
     #nome file spesis ultima generazione e ultima reazione
     file_species="%s%s%s%s%s%s" % (filesPath,'species_',lastGen,'_1_',id_last_reaction,'.csv')
@@ -66,6 +67,10 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
 
     with open(file2write,'w') as file2write:
 
+        volume= "V1 = "+ str(float(V1))+ ";\n"
+        print volume
+        file2write.write(volume)
+
         comment= "\n"+ "\n"+'//SPECIES'+ "\n"
         file2write.write(comment)
 
@@ -74,6 +79,7 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
         #costruisco dizionario con id specie e nome specie (e dizionario con nome specie e indicazione se bufferizzata) e scrivo elenco specie con concentrazioni su file
         speciesIDs={}
         speciesNames={}
+        writtenComparments={} #siccome non posso specificare compartimento più di una volta ne tengo traccia
 
         for line in open(file_species,'r').readlines():
             thisline = line.split("\t");
@@ -81,7 +87,7 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
             speciesID=thisline[0]
             speciesName=thisline[1]
             lockedConcentration=thisline[14]
-            Kdecomp=thisline[5]
+            Kdecomp=str(float(thisline[5])/V1)
 
 
 #            #se la concentrazione è bloccata la specie deve comparire nelle reazioni con il dollaro davanti
@@ -93,6 +99,8 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
             speciesIDs[speciesID]=speciesName
             speciesNames[speciesName]=lockedConcentration.strip()
 
+            print 'speciesNames[speciesName] ',speciesName
+
 
             #se specie non era presente all'inzio metto concetrazione a 0
             if int(speciesID)<int(InitialNumberOfSpecies):
@@ -100,9 +108,18 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
             else:
                 initialConcentration=thisline[1]+'='+str(0)+';'
 
-            print initialConcentration
-            file2write.write(initialConcentration)
-            file2write.write('\n')
+
+
+            if thisline[1] not in writtenComparments:
+                print initialConcentration
+                file2write.write(initialConcentration)
+                file2write.write('\n')
+
+                speciesCompartment=thisline[1]+" @ V1;"+"\n"
+                print speciesCompartment
+                writtenComparments[thisline[1]]='V1'
+                file2write.write(speciesCompartment)
+
 
 
         #costruisco dizionario con id reaction e specie catalyst(già tradotta dall'id) e rate
@@ -110,9 +127,9 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
         for line in open(file_catalysis,'r').readlines():
             thisline = line.split("\t");
             catalysisIDs[thisline[2]]= speciesIDs[thisline[1]]
-            Kcleav=thisline[5]
-            Kcond=thisline[4]
-            Kcomp=thisline[6].strip()
+            Kcleav=str(float(thisline[5])/V1)
+            Kcond=str(float(thisline[4])/V1)
+            Kcomp=str(float(thisline[6].strip())/V1)
 
 
         comment=  "\n"+ "\n"+'//reactions'+ "\n"
@@ -201,6 +218,9 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
                     print productConc
                     file2write.write(productConc)
                     products=product
+                    speciesCompartment=product+" @ V1;"+"\n"
+                    file2write.write(speciesCompartment)
+                    print speciesCompartment
                 else:
                     if speciesNames[product]=='1':
                         print 'speciesNames[product]==1:'
@@ -229,6 +249,10 @@ def importChemistry(lastGen,filesPath,ConfFilePath,outputFilePath):
                     complexConc=complex+"="+'0'+";"+"\n"
                     print complexConc
                     file2write.write(complexConc)
+                    speciesCompartment=thisline[1]+" @ V1;"+"\n"
+                    file2write.write(speciesCompartment)
+                    print speciesCompartment
+
 
                 complexation= 'complexation'+reactionID+','+substrate1+'+'+catalyst+' ->'+complex+','+Kcomp+';'
                 decomplexation='decomplexation'+reactionID+','+complex+' ->'+decomplex+','+Kdecomp+';'
