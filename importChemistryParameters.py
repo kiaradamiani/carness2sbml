@@ -1,4 +1,4 @@
 lastGen=10
-ResFilesPath="ch1/res/"
-ConfFilePath="ch1/"
+ResFilesPath="../reti/ch1/res/"
+ConfFilePath="../reti/ch1/"
 outputFilePath=""

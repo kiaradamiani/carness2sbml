@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sbml xmlns="http://www.sbml.org/sbml/level1" level="1" version="2">
+<model name="model">
+<listOfUnitDefinitions>
+<unitDefinition name="volume">
+<listOfUnits>
+<unit kind="dimensionless"/>
+</listOfUnits>
+</unitDefinition>
+<unitDefinition name="substance">
+<listOfUnits>
+<unit kind="item"/>
+</listOfUnits>
+</unitDefinition>
+</listOfUnitDefinitions>
+<listOfCompartments>
+<compartment name="V" volume="1.0"/>
+<compartment name="univ" volume="1.0"/>
+</listOfCompartments>
+<listOfSpecies>
+<species boundaryCondition="false" compartment="V" initialAmount="10.0" name="A"/>
+<species boundaryCondition="false" compartment="univ" initialAmount="10.0" name="B"/>
+</listOfSpecies>
+<listOfRules/>
+<listOfReactions>
+<reaction name="___r1" reversible="false">
+<listOfReactants>
+<speciesReference species="A" stoichiometry="1"/>
+<speciesReference species="B" stoichiometry="1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="A" stoichiometry="1"/>
+</listOfProducts>
+<kineticLaw formula="__RATE__*A*B">
+<listOfParameters>
+<parameter name="__RATE__" value="1.0"/>
+</listOfParameters>
+</kineticLaw>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>
