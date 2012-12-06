@@ -13,7 +13,7 @@ def getLastReactionID(lastGen,ResFilesPath):
     #apri file times ultima generazione per sapere l'id dell'ultima reazione
     file_times="%s%s%s%s" % (ResFilesPath,'times_',lastGen,'_1.csv')
     reactions_id,time=numpy.loadtxt(file_times, dtype=int, delimiter='\t', usecols=(0,1), unpack=True)
-    id_last_reaction=reactions_id[len(reactions_id)-1]+1
+    id_last_reaction=reactions_id[len(reactions_id)-1]
 
     print 'id_last_reaction',id_last_reaction
 
