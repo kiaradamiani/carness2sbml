@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5a1c2c0-140a-45f6-823a-c9094c908913" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExportFile.dizzy" afterPath="$PROJECT_DIR$/ExportFile.dizzy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/importChemistry.py" afterPath="$PROJECT_DIR$/importChemistry.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/importChemistryParameters.py" afterPath="$PROJECT_DIR$/importChemistryParameters.py" />
-    </list>
+    <list default="true" id="e5a1c2c0-140a-45f6-823a-c9094c908913" name="Default" comment="" />
     <ignored path="carness2sbml.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +23,7 @@
       <file leaf-file-name="importChemistry.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/importChemistry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.02265861">
+            <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.02265861">
               <folding>
                 <element signature="e#48#57#0" expanded="true" />
               </folding>
@@ -358,7 +353,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/importChemistry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.02265861">
+        <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.02265861">
           <folding>
             <element signature="e#48#57#0" expanded="true" />
           </folding>
